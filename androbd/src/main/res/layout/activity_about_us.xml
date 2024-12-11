@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- ImageView for Logo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/logo_4"
+        android:layout_marginBottom="20dp"
+        android:padding="16dp"/>
+
+    <!-- About Us Text -->
+    <TextView
+        android:id="@+id/about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="G-OBD is developed by G-OBD Solutions with reference to"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:padding="2dp"
+        android:contentDescription="@string/url_app_translation"/>
+
+    <!-- Clickable "ANDROBD" Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANDROBD"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:onClick="browseClickedUrl"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Decorative Circles (background elements) -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <!-- First Circle -->
+<!--        <View-->
+<!--            android:layout_width="400dp"-->
+<!--            android:layout_height="400dp"-->
+<!--            android:background="@drawable/circle"-->
+<!--            android:backgroundTint="#FB8C00"-->
+<!--            android:rotation="-39" />-->
+
+        <!-- Second Circle -->
+
+        <!-- Third Circle -->
+<!--        <View-->
+<!--            android:layout_width="400dp"-->
+<!--            android:layout_height="400dp"-->
+<!--            android:layout_marginTop="-50dp"-->
+<!--            android:background="@drawable/circle"-->
+<!--            android:backgroundTint="#FB8C00"-->
+<!--            android:rotation="-39"/>-->
+
+<!--        <View-->
+<!--            android:layout_width="400dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:background="@drawable/circle"-->
+<!--            android:backgroundTint="#FB8C00"-->
+<!--            android:rotation="219"-->
+<!--            android:layout_marginTop="-400dp" />-->
+    </FrameLayout>
+
+</LinearLayout>

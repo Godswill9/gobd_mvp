@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout file for displaying a TextView and a ListView -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/num_found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FB8C00"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <ListView
+        android:id="@+id/deviceList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#FB8C00"
+        android:dividerHeight="2dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"/>
+</LinearLayout>

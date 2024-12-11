@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/mil_off"
+    android:layout_height="match_parent">
+
+    <!-- Background ImageView -->
+    <View
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="700dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@android:color/black"
+        android:rotation="219" />
+    <View
+        android:layout_width="600dp"
+        android:layout_height="600dp"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="-400dp"
+        android:layout_marginTop="810dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@android:color/black"
+        android:rotation="219" />
+    <!--    <View-->
+    <!--        android:layout_width="600dp"-->
+    <!--        android:layout_height="600dp"-->
+    <!--        android:layout_gravity="top|start"-->
+    <!--        android:layout_marginStart="-310dp"-->
+    <!--        android:layout_marginTop="-610dp"-->
+    <!--        android:background="@drawable/circle"-->
+    <!--        android:rotation="219" />-->
+    <!-- GridView with modern styling -->
+    <GridView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:columnWidth="120dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="8dp"
+        android:horizontalSpacing="8dp"
+        android:stretchMode="columnWidth"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:choiceMode="none" />
+
+</FrameLayout>

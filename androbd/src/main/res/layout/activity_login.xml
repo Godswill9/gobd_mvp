@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="16dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="16dp"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/logo"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:src="@drawable/logo_4" />
+
+    <EditText
+        android:id="@+id/loginUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Password"
+        android:imeActionLabel="Sign in"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:selectAllOnFocus="true" />
+
+    <Button
+        android:id="@+id/loginBut"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:enabled="false"
+        android:text="Login"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:padding="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/loginLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:visibility="gone" />
+
+    <!-- "Don't have an account? Sign up" TextView -->
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Don't have an account? Sign up"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onSignUpClick"/>  <!-- Calls a method in your activity when clicked -->
+
+</LinearLayout>

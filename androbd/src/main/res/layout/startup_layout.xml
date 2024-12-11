@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/circle2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/user_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginTop="0dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:clickable="true"
+            android:enabled="true"
+            android:gravity="center"
+            android:text="User :"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="#EBAF64"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true" /> <!-- Aligns to the left -->
+        <!-- Align the TextView to the left -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:id="@+id/username"
+            android:clickable="true"
+            android:enabled="true"
+            android:text="James"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="#EBAF64"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="60dp"/> <!-- Aligns to the left -->
+
+        <!-- Align the Button to the right -->
+        <!--        #894D02-->
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:clickable="true"
+            android:text="Logout"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:background="@drawable/circle"
+            android:textStyle="bold"
+            android:backgroundTint="#63F4511E"
+            android:drawableEnd="@android:drawable/ic_menu_rotate"
+            android:onClick="logoutUser"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="5dp"/> <!-- Aligns to the right -->
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="294dp"
+        android:layout_weight="1"
+        android:background="@drawable/circle2"
+        android:layout_margin="2dp"
+        android:contentDescription="@string/logo"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:src="@drawable/logo_4" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/go_to_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:clickable="true"
+            android:text="Login"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circle2"
+            android:layout_marginTop="2dp"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+         />
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="54dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="@string/copyright_fr3ts0n"-->
+        <!--            android:textAppearance="@android:style/TextAppearance.Small"-->
+        <!--            android:textColor="#FFFFFF"-->
+        <!--            android:textSize="24sp" />-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="80dp"-->
+        <!--            android:clickable="true"-->
+        <!--            android:contentDescription="@string/url_app_translation"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="@string/translation_credits"-->
+        <!--            android:textAppearance="@android:style/TextAppearance.Small"-->
+        <!--            android:textColor="#FFFFFF"-->
+        <!--            android:textSize="24sp" />-->
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone" />
+
+</LinearLayout>
