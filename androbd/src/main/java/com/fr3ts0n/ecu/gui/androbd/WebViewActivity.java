@@ -135,12 +135,13 @@ public class WebViewActivity extends Activity {
         String carYear = sharedPref.getString("carYear", "");
         String carEngineType = sharedPref.getString("carEngineType", "");
         String faultCode = sharedPref.getString("faultCode", "");
+        String userToken = sharedPref.getString("userToken", "");
 
         // Construct the URL using Uri.Builder
         Uri uri = new Uri.Builder()
                 .scheme("https")
                 .authority("gobd-users.onrender.com")
-                .appendPath(carMake + '&' + carBrand + '&' + carYear + '&' + carEngineType + '&' + faultCode)
+                .appendPath(carMake + '&' + carBrand + '&' + carYear + '&' + carEngineType + '&' + faultCode + '&' + userToken )
                 .build();
 
         // Convert Uri to String
