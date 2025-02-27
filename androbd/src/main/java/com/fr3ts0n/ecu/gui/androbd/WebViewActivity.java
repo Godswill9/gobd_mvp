@@ -50,7 +50,7 @@ public class WebViewActivity extends Activity {
         // Construct the URL using Uri.Builder
         Uri uri = new Uri.Builder()
                 .scheme("https")
-                .authority("gobd-users.onrender.com")
+                .authority("gobd-users.asoroautomotive.com")
                 .appendPath(carMake + '&' + carBrand + '&' + carYear + '&' + carEngineType + '&' + faultCode + '&' + userToken )
                 .build();
 
@@ -140,7 +140,7 @@ public class WebViewActivity extends Activity {
         // Construct the URL using Uri.Builder
         Uri uri = new Uri.Builder()
                 .scheme("https")
-                .authority("gobd-users.onrender.com")
+                .authority("gobd-users.asoroautomotive.com")
                 .appendPath(carMake + '&' + carBrand + '&' + carYear + '&' + carEngineType + '&' + faultCode + '&' + userToken )
                 .build();
 

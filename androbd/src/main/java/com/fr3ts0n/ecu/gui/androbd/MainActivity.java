@@ -864,7 +864,7 @@ public class MainActivity extends PluginManager
 
 
     private void openWebView() {
-        String url = "https://gobd-users.onrender.com/";
+        String url = "https://gobd-users.asoroautomotive.com/";
         Intent intent = new Intent(MainActivity.this, WebViewActivity.class);
         intent.putExtra("url", url);
         startActivity(intent);
